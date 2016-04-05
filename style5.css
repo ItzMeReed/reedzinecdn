@@ -1,0 +1,342 @@
+        /*===============*/
+        /*    Helpers    */
+        /*===============*/
+        /* These are just basic classes that do things like hide/show elements, etc.*/
+        /* Makes a scrolling container*/
+        
+        .scrollbox {
+            height: 490px;
+            width: 100%;
+            overflow: auto;
+        }
+        /* Removes annoying cursor for links */
+        
+        .link {
+            cursor: pointer;
+        }
+        /* Makes a nonselectable container */
+        
+        .noselect {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            cursor: default;
+        }
+        /* Non draggable container*/
+        
+        .nodrag {
+            -webkit-user-drag: none;
+            -moz-user-drag: none;
+            user-drag: none;
+        }
+        /*================*/
+        /*    Headings    */
+        /*================*/
+        /* These are some heading classes that just make life easier */
+        /* To use them, add the following attribute to a element and replace <classname> with the name of the heading. */
+        /* If one of the classes says heading.orange, you need to put "heading orange" in the class attribute of the element */
+        /*----Core Classes---- */
+        /* The bare minimum for a heading. use it with: class="heading" . this came from the webkit user agent stylesheet...*/
+        
+        .heading {
+            display: block;
+            font-size: 2em;
+            -webkit-margin-before: 0.67em;
+            /*-webkit-margin-after: 0.67em;*/
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+        }
+        /* This makes a subheading, DO NOT USE WITH THE CLASS heading !! DO NOT DO THIS ==>  <h1 class="heading subheading"> */
+        
+        .subheading {
+            display: block;
+            font-size: 15px;
+            /*-webkit-margin-before: 0.67em; */
+            -webkit-margin-after: 0.67em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+        }
+        /*----Wieghts and colors----*/
+        /* This makes the heading bold */
+        
+        .bold {
+            font-family: 'Titan One', cursive;
+        }
+        
+        /*============
+            Colors
+          ============*/
+        /* Orange */
+        .orange {
+            color: rgb(255, 153, 0);
+        }
+        
+        .orange:hover {
+            color: rgb(230, 138, 0);
+        }
+        
+        /* Blue */
+        .blue {
+            color: rgb(0, 0, 255);
+        }
+        
+        /* Green */
+        .green {
+            color: rgb(0, 255, 0);
+        }
+        
+        /* Red */
+        .red {
+            color: rgb(255, 0, 0);
+        }
+        
+        .niceblue{
+            color: #1792E6;
+        }
+        /*====================
+            Backgrounds
+        ====================*/
+        
+        .red {
+            background-color: red;
+        }
+        
+        .blue-fade {
+            background: -webkit-linear-gradient(141deg, #0fb8ad 0%, #1fc8db 61%, #2cb5e8 75%);
+        }
+        .grad-fire{
+              background: -webkit-linear-gradient(141deg, red, yellow);
+        }
+        .grad-plant{
+            background: -webkit-linear-gradient(141deg, #00ff00, #009933);
+        }
+        .grad-blue-green{
+            background: -webkit-linear-gradient(141deg, #0066ff, #339933);
+        }
+        .spin {
+            animation-name: spin;
+            animation-duration: 3000ms;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+        /* Define keframes */
+        @keyframes spin {
+            0% {
+                transform:rotate(0deg);
+                background: -webkit-linear-gradient(141deg, #00ff00, #009933);
+                left:0px;
+            }
+            1%{
+                background: -webkit-linear-gradient(140deg, #00ff00, #009933);
+            }
+            2%{
+                background: -webkit-linear-gradient(139deg, #00ff00, #009933);
+            }
+            3%{
+                background: -webkit-linear-gradient(138deg, #00ff00, #009933);
+            }
+            4%{
+                background: -webkit-linear-gradient(137deg, #00ff00, #009933);
+            }
+            5%{
+                background: -webkit-linear-gradient(136deg, #00ff00, #009933);
+            }
+            6%{
+                background: -webkit-linear-gradient(135deg, #00ff00, #009933);
+            }
+            25%{
+                background: -webkit-linear-gradient(134deg, #009933, #00ff00);
+                left:500px;
+            }
+            100% {
+                transform:rotate(360deg);
+                background: -webkit-linear-gradient(137deg, #00ff00, #009933);
+                left:0px;
+            }
+        }
+        @keyframes animated_div{
+            0% {
+                background: -webkit-linear-gradient(141deg, #00ff00, #009933);
+            }
+            1%{
+                background: -webkit-linear-gradient(140deg, #00ff00, #009933);
+            }
+            2%{
+                background: -webkit-linear-gradient(139deg, #00ff00, #009933);
+            }
+            3%{
+                background: -webkit-linear-gradient(138deg, #00ff00, #009933);
+            }
+            4%{
+                background: -webkit-linear-gradient(137deg, #00ff00, #009933);
+            }
+            5%{
+                background: -webkit-linear-gradient(136deg, #00ff00, #009933);
+            }
+            6%{
+                background: -webkit-linear-gradient(135deg, #00ff00, #009933);
+            }
+            7%{
+                background: -webkit-linear-gradient(134deg, #00ff00, #009933);
+            }
+            8%{
+                background: -webkit-linear-gradient(133deg, #00ff00, #009933);
+            }
+            9%{
+                background: -webkit-linear-gradient(132deg, #00ff00, #009933);
+            }
+            10%{
+                background: -webkit-linear-gradient(131deg, #00ff00, #009933);
+            }
+            11%{
+                background: -webkit-linear-gradient(130deg, #00ff00, #009933);
+            }
+            12%{
+                background: -webkit-linear-gradient(129deg, #00ff00, #009933);
+            }
+            13%{
+                background: -webkit-linear-gradient(128deg, #00ff00, #009933);
+            }
+            14%{
+                background: -webkit-linear-gradient(127deg, #00ff00, #009933);
+            }
+            15%{
+                background: -webkit-linear-gradient(126deg, #00ff00, #009933);
+            }
+            16%{
+                background: -webkit-linear-gradient(125deg, #00ff00, #009933);
+            }
+            17%{
+                background: -webkit-linear-gradient(124deg, #00ff00, #009933);
+            }
+            18%{
+                background: -webkit-linear-gradient(123deg, #00ff00, #009933);
+            }
+            19%{
+                background: -webkit-linear-gradient(122deg, #00ff00, #009933);
+            }
+            20%{
+                background: -webkit-linear-gradient(121deg, #00ff00, #009933);
+            }
+            21%{
+                background: -webkit-linear-gradient(120deg, #00ff00, #009933);
+            }
+            22%{
+                background: -webkit-linear-gradient(119deg, #00ff00, #009933);
+            }
+            23%{
+                background: -webkit-linear-gradient(118deg, #00ff00, #009933);
+            }
+            24%{
+                background: -webkit-linear-gradient(117deg, #00ff00, #009933);
+            }
+            25%{
+                background: -webkit-linear-gradient(116deg, #00ff00, #009933);
+            }
+            26%{
+                background: -webkit-linear-gradient(115deg, #00ff00, #009933);
+            }
+            27%{
+                background: -webkit-linear-gradient(114deg, #00ff00, #009933);
+            }
+            28%{
+                background: -webkit-linear-gradient(113deg, #00ff00, #009933);
+            }
+            29%{
+                background: -webkit-linear-gradient(112deg, #00ff00, #009933);
+            }
+            30%{
+                background: -webkit-linear-gradient(111deg, #00ff00, #009933);
+            }
+            31%{
+                background: -webkit-linear-gradient(110deg, #00ff00, #009933);
+            }
+            32%{
+                background: -webkit-linear-gradient(109deg, #00ff00, #009933);
+            }
+            33%{
+                background: -webkit-linear-gradient(108deg, #00ff00, #009933);
+            }
+            34%{
+                background: -webkit-linear-gradient(107deg, #00ff00, #009933);
+            }
+            35%{
+                background: -webkit-linear-gradient(106deg, #00ff00, #009933);
+            }
+            36%{
+                background: -webkit-linear-gradient(105deg, #00ff00, #009933);
+            }
+            37%{
+                background: -webkit-linear-gradient(104deg, #00ff00, #009933);
+            }
+            38%{
+                background: -webkit-linear-gradient(103deg, #00ff00, #009933);
+            }
+            39%{
+                background: -webkit-linear-gradient(102deg, #00ff00, #009933);
+            }
+            40%{
+                background: -webkit-linear-gradient(101deg, #00ff00, #009933);
+            }
+        }
+        @keyframes gradmove{
+            from{
+                background: -webkit-linear-gradient(141deg, #0066ff, #339933);
+            }
+            to{
+                background: -webkit-linear-gradient(141deg, #00ff00, #009933);
+            }
+        }
+        @keyframes fire{
+            0% {
+                background: -webkit-linear-gradient(141deg, red, yellow);
+            }
+            25%{
+                background: -webkit-linear-gradient(135deg, red, yellow);
+            }
+            50%{
+                background: -webkit-linear-gradient(130deg, red, yellow);
+            }
+            75%{
+                background: -webkit-linear-gradient(123deg, red, yellow);
+            }
+            100% {
+                background: -webkit-linear-gradient(115deg, red, yellow);
+            }
+        }
+        @keyframes plant{
+            0% {
+                background: -webkit-linear-gradient(141deg, #00ff00, #009933);
+            }
+            25%{
+                background: -webkit-linear-gradient(135deg, #00ff00, #009933);
+            }
+            50%{
+                background: -webkit-linear-gradient(130deg, #00ff00, #009933);
+            }
+            75%{
+                background: -webkit-linear-gradient(123deg, #00ff00, #009933);
+            }
+            100% {
+                background: -webkit-linear-gradient(115deg, #00ff00, #009933);
+            }
+        }
+        /* End keyframes*/
+        .fire-animate{
+            animation-name: fire;
+            animation-duration: 3000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .plant-animate{
+            animation-name: plant;
+            animation-duration: 3000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .gradmove {
+            animation-name: animated_div;
+            animation-duration: 4000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
